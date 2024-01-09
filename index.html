@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="movies.css">
+</head>
+
+<body>
+    <h1>Movies App</h1>
+    <button id="show-add-movie-form" class="btn btn-primary">Add Movie</button>
+    <div class="container">
+        <ul id="movies-ul" class="list-group movies-ul"></ul>
+    </div>
+    <div class="add-movie-form" style="display: none;">
+        <h2>Add a Movie</h2>
+        <form id="movie-form">
+            <input type="text" id="movie-title" name="movieTitle" placeholder="Title" required><br>
+            <input type="number" id="movie-year" name="movieYear" placeholder="Year" required><br>
+            <input type="text" id="movie-image-url" name="movieImageUrl" placeholder="Image URL" required><br>
+            <input type="text" id="movie-info" name="movieInfo" placeholder="Info (e.g., PG-13 | 120 min | Drama)" required><br>
+            <textarea id="movie-description" name="movieDescription" placeholder="Description" required></textarea><br>
+            <input type="text" id="movie-director" name="movieDirector" placeholder="Director" required><br>
+            <input type="text" id="movie-lead-actors" name="movieLeadActors" placeholder="Lead Actors" required><br>
+            <input type="url" id="movie-trailer-url" name="movieTrailerUrl" placeholder="Trailer URL" required><br>
+            <button type="submit" class="btn btn-primary">Add Movie</button>
+        </form>
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+    <script type="module" src="movies.js"></script>
+    <script type="module" src="./dependency/dependency.js"></script>   
+</body>
+
+</html>
